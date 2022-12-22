@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="269dp"
+        android:layout_height="213dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:src="@drawable/welcome_image"/>
+
+    <TextView
+        android:id="@+id/image_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:text="RENTSPORT"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="9dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image_title"
+        android:text="Temukan lokasi olahraga favoritmu\nhanya dengan beberapa sentuhan"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_explore"
+        android:layout_below="@id/tagline"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:paddingStart="77dp"
+        android:layout_centerHorizontal="true"
+        android:paddingEnd="77dp"
+        android:text="Explore"/>
+</RelativeLayout>
