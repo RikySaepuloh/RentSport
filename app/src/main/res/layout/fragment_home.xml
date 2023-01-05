@@ -68,6 +68,9 @@
                 android:id="@+id/btn_futsal"
                 android:layout_marginStart="28dp"
                 android:layout_marginEnd="21dp"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <LinearLayout
@@ -90,8 +93,11 @@
                 android:id="@+id/btn_voli"
                 android:layout_width="wrap_content"
                 android:layout_marginStart="21dp"
+                app:cardElevation="0dp"
+                android:clickable="true"
                 android:layout_marginEnd="21dp"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:focusable="true">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -113,6 +119,9 @@
                 android:id="@+id/btn_badminton"
                 android:layout_marginStart="21dp"
                 android:layout_marginEnd="21dp"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <LinearLayout
@@ -135,6 +144,9 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/btn_basket"
                 android:layout_width="wrap_content"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_marginStart="21dp"
                 android:layout_marginEnd="28dp"
                 android:layout_height="wrap_content">
@@ -165,6 +177,7 @@
             android:textStyle="bold"/>
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_rekomendasi"
             android:layout_width="298dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
