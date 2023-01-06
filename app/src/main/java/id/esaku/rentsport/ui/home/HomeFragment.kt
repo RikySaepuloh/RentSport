@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import id.esaku.rentsport.DetailPlaceActivity
 import id.esaku.rentsport.databinding.FragmentHomeBinding
+import id.esaku.rentsport.ui.LokasiActivity
 
 class HomeFragment : Fragment() {
 
@@ -41,6 +42,10 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnRekomendasi.setOnClickListener {
             requireContext().startActivity(Intent(this.activity, DetailPlaceActivity::class.java))
+        }
+
+        binding.tvLokasi.setOnClickListener {
+            startActivity(Intent(requireActivity(),LokasiActivity::class.java))
         }
     }
 
