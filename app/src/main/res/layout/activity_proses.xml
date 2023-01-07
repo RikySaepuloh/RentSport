@@ -82,6 +82,7 @@
                 android:paddingEnd="12dp"
                 android:paddingBottom="12dp">
                 <TextView
+                    android:id="@+id/tv_norek"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textIsSelectable="true"
@@ -89,6 +90,7 @@
                     android:text="1300018493729"/>
 
                 <ImageView
+                    android:id="@+id/btn_copy_norek"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -127,6 +129,7 @@
                 android:paddingEnd="12dp"
                 android:paddingBottom="12dp">
                 <TextView
+                    android:id="@+id/tv_total"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textIsSelectable="true"
@@ -134,6 +137,7 @@
                     android:text="Rp40.000"/>
 
                 <ImageView
+                    android:id="@+id/btn_copy_total"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"

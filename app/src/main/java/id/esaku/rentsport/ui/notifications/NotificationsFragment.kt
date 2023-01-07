@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import id.esaku.rentsport.EditProfileActivity
 import id.esaku.rentsport.LoginActivity
+import id.esaku.rentsport.TicketActivity
 import id.esaku.rentsport.databinding.FragmentNotificationsBinding
 
 class NotificationsFragment : Fragment() {
@@ -39,6 +41,14 @@ class NotificationsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnKeluar.setOnClickListener{
             startActivity(Intent(requireActivity(),LoginActivity::class.java))
+        }
+
+        binding.tvRaise.setOnClickListener {
+            startActivity(Intent(requireActivity(),TicketActivity::class.java))
+        }
+
+        binding.civProfile.setOnClickListener {
+            startActivity(Intent(requireActivity(),EditProfileActivity::class.java))
         }
     }
 
