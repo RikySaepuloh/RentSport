@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailPlaceActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="14dp">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Detail Lokasi" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="14dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="9dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:src="@drawable/img_dummy" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_nama_rekomendasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="Moriz Futsal"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_rating_reko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/tv_nama_rekomendasi"
+                    android:src="@drawable/ic_5_stars" />
+
+                <TextView
+                    android:id="@+id/tv_rating_reko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/iv_rating_reko"
+                    android:text="5/5"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:id="@+id/tv_harga_reko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="Rp20.000/Jam"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="9dp"
+                android:gravity="bottom"
+                android:minLines="2"
+                android:text="Jl. Encep Kartawiria No.121, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_location2" />
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Deskripsi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Moriz Futsal adalah tempat penyewaan lapangan olahraga. Kami selalu mengutamakan kenyamanan dan kelengkapan dari lapangan kami. Salah satu dari 5 tempat penyewaan lapangan olahraga terbesar di Kota Cimahi."/>
+
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Galeri"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:paddingStart="13dp"
+                android:paddingEnd="13dp"
+                android:clipToPadding="false">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Pilih Lapangan"/>
+            <RadioGroup
+                android:id="@+id/rg_lapang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rb_futsal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Lap. Futsal"/>
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rb_voli"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="Lap. Voli"/>
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rb_basket"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="Lap. Basket"/>
+            </RadioGroup>
+
+
+
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="13dp"-->
+            <!--            android:layout_marginBottom="12dp"-->
+            <!--            android:orientation="horizontal"-->
+            <!--            android:weightSum="3">-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:gravity="center"-->
+            <!--                android:text="Lap. Futsal"-->
+            <!--                android:textSize="12sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:gravity="center"-->
+            <!--                android:text="Lap. Voli"-->
+            <!--                android:textSize="12sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:gravity="center"-->
+            <!--                android:text="Lap. Basket"-->
+            <!--                android:textSize="12sp" />-->
+            <!--        </LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pilih_jadwal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Pilih Jadwal"
+        android:textSize="12sp"
+        android:insetTop="0dp"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="-8dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:insetBottom="0dp"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>

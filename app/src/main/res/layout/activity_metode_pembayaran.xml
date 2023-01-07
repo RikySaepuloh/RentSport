@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MetodePembayaranActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="14dp">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Metode Pembayaran" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer melalui bank:"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="48dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_bca"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:drawableStart="@drawable/ic_bca"
+                />
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_mandiri"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_mandiri"
+                />
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_bri"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_bri"
+                />
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_bni"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_bni"
+                />
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_bsi"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_bsi"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Detail Transaksi:"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            android:weightSum="12">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="Nama Tempat"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/dashed_line"
+                android:layerType="software"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="Moriz Futsal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            android:weightSum="12">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="Lapang"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/dashed_line"
+                android:layerType="software"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="A1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            android:weightSum="12">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="Harga"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/dashed_line"
+                android:layerType="software"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="Rp20.000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            android:weightSum="12">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="Total Jam"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/dashed_line"
+                android:layerType="software"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="2 jam"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            android:weightSum="12">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="Total Trans."/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/dashed_line"
+                android:layerType="software"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="end"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="Rp40.000"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Ini adalah halaman terakhir transaksimu,\nperiksa kembali transaksi agar tidak terjadi kesalahan."/>
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_proses"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Proses Transaksi"
+        android:textSize="12sp"
+        android:insetTop="0dp"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="-8dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:insetBottom="0dp"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
