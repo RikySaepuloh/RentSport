@@ -9,6 +9,9 @@ class UserRepository(
 ) {
     val readAllData:LiveData<List<UserEntity>> = userDao.getAllUser()
 
+    suspend fun login(username:String, password:String) =
+        userDao.login(username,password)
+
     suspend fun addUser(user:UserEntity){
         userDao.addUser(user)
     }
