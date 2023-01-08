@@ -10,9 +10,11 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface TempatSewaDao {
-    @Query("SELECT * FROM tempat_sewa")
+    @Query("SELECT * FROM tempatsewa")
     fun getAllTempatSewa(): LiveData<List<TempatSewaEntity>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addTempatSewa(tempat_sewa:TempatSewaEntity)
+
+
 }

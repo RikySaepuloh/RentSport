@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface EventDao {
     @Query("SELECT * FROM event")
-    fun getAllEvent(): LiveData<List<TempatSewaEntity>>
+    fun getAllEvent(): LiveData<List<EventEntity>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addEvent(event:EventEntity)
