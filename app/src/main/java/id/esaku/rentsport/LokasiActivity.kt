@@ -1,4 +1,4 @@
-package id.esaku.rentsport.ui
+package id.esaku.rentsport
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

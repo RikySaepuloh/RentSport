@@ -1,6 +1,6 @@
 package id.esaku.rentsport.domain.model
 
-data class User(
+data class UserItem(
     val idUser: String,
 
     val nama: String?,

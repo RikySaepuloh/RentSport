@@ -6,5 +6,6 @@ import id.esaku.rentsport.data.source.local.entity.RentSportEntity
 
 @Database(entities = [RentSportEntity::class], version = 1, exportSchema = false)
 abstract class RentSportDatabase : RoomDatabase() {
-    abstract fun recipeDao(): RecipeDao
+    abstract fun userDao(): UserDao
+
 }

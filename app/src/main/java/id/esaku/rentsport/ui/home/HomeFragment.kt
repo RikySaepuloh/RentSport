@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import id.esaku.rentsport.DetailPlaceActivity
 import id.esaku.rentsport.databinding.FragmentHomeBinding
-import id.esaku.rentsport.ui.LokasiActivity
+import id.esaku.rentsport.LokasiActivity
 
 class HomeFragment : Fragment() {
 
@@ -45,7 +43,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.tvLokasi.setOnClickListener {
-            startActivity(Intent(requireActivity(),LokasiActivity::class.java))
+            startActivity(Intent(requireActivity(), LokasiActivity::class.java))
         }
     }
 
