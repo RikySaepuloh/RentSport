@@ -9,7 +9,6 @@ import java.util.Date
 @Entity(tableName = "transaksi")
 data class TransaksiEntity(
     @PrimaryKey
-    @NonNull
     @ColumnInfo(name = "id_transaksi")
     val idTransaksi: String,
 

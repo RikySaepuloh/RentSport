@@ -3,8 +3,8 @@ package id.esaku.rentsport
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import id.esaku.rentsport.databinding.ActivityMainBinding
 import id.esaku.rentsport.databinding.ActivityWelcomeBinding
+import id.esaku.rentsport.ui.login.LoginActivity
 
 class WelcomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWelcomeBinding
@@ -16,7 +16,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnExplore.setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 }

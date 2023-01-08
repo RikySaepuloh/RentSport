@@ -8,7 +8,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "user")
 data class UserEntity(
     @PrimaryKey
-    @NonNull
     @ColumnInfo(name = "id_user")
     val idUser: String,
 
@@ -17,6 +16,9 @@ data class UserEntity(
 
     @ColumnInfo(name = "username")
     val username: String,
+
+    @ColumnInfo(name = "email")
+    val email: String,
 
     @ColumnInfo(name = "alamat")
     val alamat: String,
