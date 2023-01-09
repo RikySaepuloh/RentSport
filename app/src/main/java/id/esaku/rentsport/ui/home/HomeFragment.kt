@@ -1,5 +1,6 @@
 package id.esaku.rentsport.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import id.esaku.rentsport.DetailPlaceActivity
+import id.esaku.rentsport.LokasiActivity
 import id.esaku.rentsport.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -33,6 +36,17 @@ class HomeFragment : Fragment() {
 //            textView.text = it
 //        }
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnRekomendasi.setOnClickListener {
+            requireContext().startActivity(Intent(this.activity, DetailPlaceActivity::class.java))
+        }
+
+        binding.tvLokasi.setOnClickListener {
+            startActivity(Intent(requireActivity(), LokasiActivity::class.java))
+        }
     }
 
     override fun onDestroyView() {
