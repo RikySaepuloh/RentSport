@@ -38,5 +38,4 @@ class TicketViewModel(application: Application):AndroidViewModel(application) {
         }
     }
 
-
 }
