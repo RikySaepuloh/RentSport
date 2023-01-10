@@ -9,7 +9,6 @@ import java.util.Date
 @Entity(tableName = "detailEvent")
 data class DetailEventEntity(
     @PrimaryKey
-    @NonNull
     @ColumnInfo(name = "id_event")
     val idEvent: String,
 

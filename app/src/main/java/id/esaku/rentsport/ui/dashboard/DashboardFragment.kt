@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import id.esaku.rentsport.DetailPlaceActivity
+import id.esaku.rentsport.DetailRiwayatTransaksiActivity
 import id.esaku.rentsport.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -34,7 +35,9 @@ class DashboardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        binding.btnItem.setOnClickListener {
+            startActivity(Intent(requireActivity(),DetailRiwayatTransaksiActivity::class.java))
+        }
     }
 
     override fun onDestroyView() {

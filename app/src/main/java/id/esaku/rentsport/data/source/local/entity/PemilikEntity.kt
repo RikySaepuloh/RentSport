@@ -8,7 +8,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "pemilik")
 data class PemilikEntity(
     @PrimaryKey
-    @NonNull
     @ColumnInfo(name = "id_tempat_sewa")
     val idTempatSewa: String,
 

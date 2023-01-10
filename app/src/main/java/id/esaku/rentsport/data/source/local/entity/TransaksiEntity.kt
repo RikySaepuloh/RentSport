@@ -8,9 +8,9 @@ import java.util.Date
 
 @Entity(tableName = "transaksi")
 data class TransaksiEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id_transaksi")
-    val idTransaksi: String,
+    val idTransaksi: Int,
 
     @ColumnInfo(name = "id_user")
     val idUser: String,

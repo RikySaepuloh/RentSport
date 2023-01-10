@@ -8,7 +8,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "detailTransaksi")
 data class DetailTransaksiEntity(
     @PrimaryKey
-    @NonNull
     @ColumnInfo(name = "id_lapang")
     val idLapang: String,
 

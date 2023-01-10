@@ -8,7 +8,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "penyewa")
 data class PenyewaEntity(
     @PrimaryKey
-    @NonNull
     @ColumnInfo(name = "poin")
     val poin: Int,
 

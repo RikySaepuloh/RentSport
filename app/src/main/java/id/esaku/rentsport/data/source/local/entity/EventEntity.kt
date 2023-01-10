@@ -8,10 +8,10 @@ import java.util.Date
 
 @Entity(tableName = "event")
 data class EventEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "id_event")
-    val idEvent: String,
+    val idEvent: Int,
 
     @ColumnInfo(name = "id_user")
     val idUser: String,

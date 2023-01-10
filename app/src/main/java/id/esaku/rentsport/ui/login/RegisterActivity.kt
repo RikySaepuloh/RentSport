@@ -32,13 +32,14 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun insertNewUserToDatabase() {
-         val user=UserEntity("USR-001",binding.etNama.text.toString(),binding.etUsername.text.toString(),binding.etEmail.text.toString(),binding.etAlamat.text.toString(),binding.etPassword.text.toString())
+         val user=UserEntity(0,binding.etNama.text.toString(),binding.etUsername.text.toString(),binding.etEmail.text.toString(),binding.etAlamat.text.toString(),binding.etPassword.text.toString())
         mUserViewModel.addUser(user)
         binding.etNama.setText("")
         binding.etUsername.setText("")
         binding.etEmail.setText("")
         binding.etPassword.setText("")
         binding.etAlamat.setText("")
-        Toast.makeText(this,"Data berhasil dimasukkan",Toast.LENGTH_LONG).show()
+        Toast.makeText(this,"Registrasi Berhasil",Toast.LENGTH_LONG).show()
+        finish()
     }
 }

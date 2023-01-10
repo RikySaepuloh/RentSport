@@ -7,10 +7,10 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "metodePembayaran")
 data class MetodePembayaranEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "id_metode")
-    val idMetode: String,
+    val idMetode: Int,
 
     @ColumnInfo(name = "nama")
     val nama: String,

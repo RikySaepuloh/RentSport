@@ -15,6 +15,8 @@ import kotlin.math.log
 
 class UserViewModel(application: Application):AndroidViewModel(application) {
     private val readAllData: LiveData<List<UserEntity>>
+    private val _userData = MutableLiveData<UserEntity?>()
+    val user: LiveData<UserEntity?> get() = _userData
     private val _loginData = MutableLiveData<UserEntity?>()
     val loginData: LiveData<UserEntity?> get() = _loginData
     private val repository:UserRepository
@@ -23,6 +25,18 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
         val userDao = UserDatabase.getDatabase(application).userDao()
         repository = UserRepository(userDao)
         readAllData = repository.readAllData
+    }
+
+    fun getUser(userid:Int){
+        viewModelScope.launch(Dispatchers.IO) {
+            _userData.postValue(repository.getUser(userid))
+        }
+    }
+
+    fun updateUser(userid:Int,nama:String,email:String,alamat:String,password: String){
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.updateUser(userid,nama, email, alamat, password)
+        }
     }
 
     fun addUser(user:UserEntity){

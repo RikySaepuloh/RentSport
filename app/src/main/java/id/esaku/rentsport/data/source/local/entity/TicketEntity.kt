@@ -8,10 +8,9 @@ import java.util.Date
 
 @Entity(tableName = "ticket")
 data class TicketEntity(
-    @PrimaryKey
-    @NonNull
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id_ticket")
-    val idTicket: String,
+    val idTicket: Int,
 
     @ColumnInfo(name = "id_pegawai")
     val idPegawai: String,
@@ -24,9 +23,9 @@ data class TicketEntity(
 
     @ColumnInfo(name = "nama")
     val nama: String,
-
-    @ColumnInfo(name = "tanggal")
-    val tanggal: Date,
+//
+//    @ColumnInfo(name = "tanggal")
+//    val tanggal: Date,
 
     @ColumnInfo(name = "deskripsi")
     val deskripsi: String

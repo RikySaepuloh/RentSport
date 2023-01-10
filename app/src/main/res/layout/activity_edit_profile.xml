@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EditProfileActivity">
+    tools:context=".ui.login.EditProfileActivity">
 
     <ImageView
         android:layout_width="182dp"
@@ -29,8 +29,8 @@
             app:cardElevation="0dp">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/ic_back" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -43,23 +43,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Registrasi"
+        android:text="Edit Profil"
         android:textSize="32sp" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/civ_profile"
-        android:layout_below="@id/top_text"
-        android:layout_marginTop="18dp"
-        app:civ_border_width="2dp"
-        android:src="@drawable/ic_location"
-        app:civ_border_color="@color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_width="50dp"
-        android:layout_height="50dp" />
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_below="@id/civ_profile"
+        android:layout_below="@id/top_text"
         android:layout_above="@id/btn_register"
         android:layout_height="wrap_content">
 
@@ -71,10 +62,21 @@
             android:paddingTop="8dp"
             android:paddingEnd="40dp">
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile"
+                android:layout_marginTop="18dp"
+                app:civ_border_width="2dp"
+                android:src="@drawable/img_profile_dummy"
+                app:civ_border_color="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="UserID"
+                android:layout_marginTop="12dp"
                 android:textSize="12sp" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -83,6 +85,7 @@
                 android:layout_height="wrap_content"
                 app:boxCornerRadiusBottomEnd="8dp"
                 app:boxCornerRadiusBottomStart="8dp"
+                android:enabled="false"
                 app:boxCornerRadiusTopEnd="8dp"
                 app:boxCornerRadiusTopStart="8dp">
 
@@ -99,7 +102,34 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nama Pengguna"
+                android:text="Username"
+                android:layout_marginTop="13dp"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                android:enabled="false"
+                app:boxCornerRadiusTopStart="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:enabled="false"
+                    android:inputType="none"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
                 android:layout_marginTop="13dp"
                 android:textSize="12sp" />
 
@@ -120,6 +150,7 @@
                     android:inputType="text"
                     />
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -200,7 +231,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_ubah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
@@ -209,7 +240,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="20dp"
         android:insetBottom="0dp"
         android:text="Ubah"/>
 

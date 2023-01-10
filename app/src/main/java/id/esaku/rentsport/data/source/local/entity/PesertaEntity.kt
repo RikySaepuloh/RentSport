@@ -7,10 +7,10 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "peserta")
 data class PesertaEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "id_event")
-    val idEvent: String,
+    val idEvent: Int,
 
     @ColumnInfo(name = "id_user")
     val idUser: String,

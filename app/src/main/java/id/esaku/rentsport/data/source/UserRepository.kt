@@ -15,4 +15,11 @@ class UserRepository(
     suspend fun addUser(user:UserEntity){
         userDao.addUser(user)
     }
+
+    suspend fun updateUser(userid: Int,nama:String,email:String,alamat:String,password: String){
+        userDao.updateUser(userid,nama, email, alamat, password)
+    }
+
+    suspend fun getUser(userid:Int)= userDao.getUserProfile(userid)
+
 }

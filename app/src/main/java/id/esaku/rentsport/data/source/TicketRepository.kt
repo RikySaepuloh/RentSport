@@ -8,12 +8,12 @@ import id.esaku.rentsport.data.source.local.room.UserDao
 class TicketRepository(
     private val ticketDao: TicketDao
 ) {
-    val readAllData:LiveData<List<UserEntity>> = ticketDao.getAllUser()
-
-    suspend fun login(username:String, password:String) =
-        userDao.login(username,password)
-
-    suspend fun addUser(user:UserEntity){
-        userDao.addUser(user)
-    }
+//    val readAllData:LiveData<List<UserEntity>> = ticketDao.getAllUser()
+//
+//    suspend fun login(username:String, password:String) =
+//        userDao.login(username,password)
+//
+//    suspend fun addUser(user:UserEntity){
+//        userDao.addUser(user)
+//    }
 }
