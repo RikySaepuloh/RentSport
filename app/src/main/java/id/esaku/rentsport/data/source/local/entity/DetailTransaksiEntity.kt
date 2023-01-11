@@ -9,10 +9,10 @@ import androidx.room.PrimaryKey
 data class DetailTransaksiEntity(
     @PrimaryKey
     @ColumnInfo(name = "id_transaksi")
-    val idTransaksi: String,
+    val idTransaksi: Int,
 
     @ColumnInfo(name = "id_lapang")
-    val idLapang: String,
+    val idLapang: Int,
 
     @ColumnInfo(name = "deskripsi")
     val deskripsi: String,

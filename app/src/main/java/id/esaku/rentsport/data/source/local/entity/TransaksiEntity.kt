@@ -13,10 +13,10 @@ data class TransaksiEntity(
     val idTransaksi: Int,
 
     @ColumnInfo(name = "id_user")
-    val idUser: String,
+    val idUser: Int,
 
     @ColumnInfo(name = "tanggal")
-    val tanggal: Date,
+    val tanggal: String,
 
     @ColumnInfo(name = "status")
     val status: Boolean

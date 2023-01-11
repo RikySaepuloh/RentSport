@@ -1,4 +1,4 @@
-package id.esaku.rentsport.data.source
+package id.esaku.rentsport.domain.repository
 
 import androidx.lifecycle.LiveData
 import id.esaku.rentsport.data.source.local.entity.TempatSewaEntity

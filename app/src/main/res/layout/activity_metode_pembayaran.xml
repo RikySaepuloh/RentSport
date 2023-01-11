@@ -114,12 +114,12 @@
                 android:layerType="software"
                 android:layout_height="fill_parent"/>
             <TextView
+                android:id="@+id/tv_nama_tempat_sewa"
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:gravity="end"
                 android:textSize="12sp"
-                android:layout_height="wrap_content"
-                android:text="Moriz Futsal"/>
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <LinearLayout
@@ -142,6 +142,7 @@
                 android:layerType="software"
                 android:layout_height="fill_parent"/>
             <TextView
+                android:id="@+id/tv_lapang"
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:gravity="end"
@@ -174,8 +175,8 @@
                 android:layout_weight="3"
                 android:gravity="end"
                 android:textSize="12sp"
-                android:layout_height="wrap_content"
-                android:text="Rp20.000"/>
+                android:text="Rp20.000"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <LinearLayout
@@ -198,12 +199,12 @@
                 android:layerType="software"
                 android:layout_height="fill_parent"/>
             <TextView
+                android:id="@+id/tv_totaljam"
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:gravity="end"
                 android:textSize="12sp"
-                android:layout_height="wrap_content"
-                android:text="2 jam"/>
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
@@ -235,6 +236,7 @@
                 android:layerType="software"
                 android:layout_height="fill_parent"/>
             <TextView
+                android:id="@+id/tv_total"
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:gravity="end"
@@ -242,7 +244,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:layout_height="wrap_content"
-                android:text="Rp40.000"/>
+                />
         </LinearLayout>
 
         <TextView

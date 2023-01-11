@@ -15,6 +15,7 @@ class DetailPlaceActivity : AppCompatActivity() {
     private lateinit var mTempatSewaViewModel: TempatSewaViewModel
     var id:Int = 0
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailPlaceBinding.inflate(layoutInflater)

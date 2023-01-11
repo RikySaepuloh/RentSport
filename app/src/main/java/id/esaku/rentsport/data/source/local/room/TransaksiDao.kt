@@ -9,8 +9,8 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface TransaksiDao {
     @Query("SELECT * FROM transaksi WHERE id_user=:id_user")
-    fun getTransaksiFromUser(id_user:Int): LiveData<List<TransaksiEntity>>
+    fun getTransaksiFromUser(id_user:Int): List<TransaksiEntity>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addTransaksi(transaksiEntity: TransaksiEntity)
+    suspend fun addTransaksi(transaksiEntity: TransaksiEntity):Long
 }
