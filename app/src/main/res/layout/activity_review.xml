@@ -88,6 +88,7 @@
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:text="Kirim Rating"
+        android:id="@+id/btn_Kirim"
         android:textAllCaps="false"
         android:textSize="12sp"
         app:cornerRadius="8dp"

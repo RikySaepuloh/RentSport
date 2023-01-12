@@ -1,5 +1,6 @@
 package id.esaku.rentsport
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.gms.maps.GoogleMap
@@ -17,6 +18,11 @@ class ReviewActivity : AppCompatActivity() {
 
         binding.btnBack.setOnClickListener {
             finish()
+        }
+
+        binding.btnKirim.setOnClickListener {
+            finishAffinity()
+            startActivity(Intent(this,MainActivity::class.java))
         }
     }
 }
