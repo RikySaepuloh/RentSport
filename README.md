@@ -4,8 +4,8 @@ GitHub ini berisi source code dari Aplikasi RentSport dalam rangka memenuhi Tuga
 Dibangun dengan menggunakan bahasa Kotlin yang mengimplementasikan arsitektur sistem MVVM untuk memisahkan antara kode GUI, logika bisnis, sampai ke logika back-end.
 
 ## MAPS API KEY --IMPORTANT--
-Masukkan api key dibawah ini ke local.properties project ini
-MAPS_API_KEY=AIzaSyBthcp1GQkK10Bc_J04_XsvXGw1k0S816s
+Untuk menjalankan project ini, harap masukkan MAPS_API_KEY pada local.properties.
+Silakan hubungi salah satu dari kontributor pada project ini untuk mendapatkan MAPS_API_KEY
 
 Aplikasi ini dibangun dengan mengimplementasikan library berikut:
 - Glide [https://github.com/bumptech/glide]
