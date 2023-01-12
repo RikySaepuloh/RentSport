@@ -1,5 +1,6 @@
 package id.esaku.rentsport
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
@@ -16,13 +17,17 @@ class TicketActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.spJenis.setItems("Ice Cream Sandwich", "Jelly Bean", "KitKat", "Lollipop", "Marshmallow")
-        binding.spJenis.setOnItemSelectedListener(MaterialSpinner.OnItemSelectedListener<String> { view, position, id, item ->
+        binding.spJenis.setItems("Pembayaran", "Pemesanan")
+        binding.spJenis.setOnItemSelectedListener { view, position, id, item ->
             Snackbar.make(
                 view,
                 "Clicked $item",
                 Snackbar.LENGTH_LONG
             ).show()
-        })
+        }
+
+        binding.btnKirim.setOnClickListener {
+            startActivity(Intent(this,ReviewActivity::class.java))
+        }
     }
 }
