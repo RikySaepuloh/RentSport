@@ -27,17 +27,31 @@
             android:layout_gravity="center"
             android:layout_marginTop="34dp"
             android:src="@drawable/img_profile_dummy"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greyDim"
+            android:layout_marginTop="8dp"
+            android:text="Username"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/greyDim"
-            android:text="Nama Pengguna"/>
+            android:layout_marginTop="8dp"
+            android:text="Nama Lengkap"/>
 
         <TextView
+            android:id="@+id/tv_nama_lengkap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Riky Saepuloh"/>
+            android:text=""/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,9 +61,10 @@
             android:textColor="@color/greyDim"/>
 
         <TextView
+            android:id="@+id/tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="rikysaepuloh@student.telkomuniversity.ac.id"/>
+            android:text=""/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -59,9 +74,10 @@
             android:textColor="@color/greyDim"/>
 
         <TextView
+            android:id="@+id/tv_alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cimahi Selatan, Kota Cimahi"/>
+            android:text=""/>
 
     </LinearLayout>
 
