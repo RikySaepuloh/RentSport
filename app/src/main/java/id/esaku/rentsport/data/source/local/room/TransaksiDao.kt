@@ -12,5 +12,5 @@ interface TransaksiDao {
     fun getTransaksiFromUser(id_user:String): LiveData<List<TransaksiEntity>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addTransaksi(transaksiEntity: TransaksiEntity,id_user: String)
+    suspend fun addTransaksi(transaksiEntity: TransaksiEntity)
 }

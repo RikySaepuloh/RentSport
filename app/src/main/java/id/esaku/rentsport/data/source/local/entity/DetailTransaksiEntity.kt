@@ -8,11 +8,11 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "detailTransaksi")
 data class DetailTransaksiEntity(
     @PrimaryKey
-    @ColumnInfo(name = "id_lapang")
-    val idLapang: String,
-
     @ColumnInfo(name = "id_transaksi")
     val idTransaksi: String,
+
+    @ColumnInfo(name = "id_lapang")
+    val idLapang: String,
 
     @ColumnInfo(name = "deskripsi")
     val deskripsi: String,

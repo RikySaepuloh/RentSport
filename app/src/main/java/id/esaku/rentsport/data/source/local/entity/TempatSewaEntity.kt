@@ -15,6 +15,15 @@ data class TempatSewaEntity(
     @ColumnInfo(name = "nama")
     val nama: String,
 
+    @ColumnInfo(name = "alamat")
+    val alamat: String,
+
+    @ColumnInfo(name = "deskripsi")
+    val deskripsi: String,
+
+    @ColumnInfo(name = "foto")
+    val foto: Int,
+
     @ColumnInfo(name = "jumlah_lapangan")
     val jumlahLapangan: Int,
 )

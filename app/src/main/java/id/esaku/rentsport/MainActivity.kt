@@ -2,16 +2,23 @@ package id.esaku.rentsport
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import id.esaku.rentsport.data.source.local.entity.TempatSewaEntity
+import id.esaku.rentsport.data.source.local.entity.UserEntity
 import id.esaku.rentsport.databinding.ActivityMainBinding
+import id.esaku.rentsport.ui.TempatSewaViewModel
+import id.esaku.rentsport.ui.home.TempatSewaAdapter
+import id.esaku.rentsport.ui.login.UserViewModel
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,5 +38,7 @@ class MainActivity : AppCompatActivity() {
 //        )
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
     }
+
 }

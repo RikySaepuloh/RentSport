@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DetailPlaceActivity">
+    tools:context=".ui.home.DetailPlaceActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,6 +47,7 @@
             android:paddingBottom="9dp">
 
             <ImageView
+                android:id="@+id/iv_image"
                 android:scaleType="fitXY"
                 android:layout_width="match_parent"
                 android:layout_height="154dp"
@@ -99,10 +100,11 @@
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/tv_alamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawablePadding="9dp"
-                android:gravity="bottom"
+                android:gravity="center_vertical"
                 android:minLines="2"
                 android:text="Jl. Encep Kartawiria No.121, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512"
                 android:textSize="12sp"
@@ -116,6 +118,7 @@
                 android:text="Deskripsi"/>
 
             <TextView
+                android:id="@+id/tv_deskripsi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"

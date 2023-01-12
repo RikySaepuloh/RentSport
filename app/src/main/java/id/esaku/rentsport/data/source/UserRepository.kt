@@ -20,6 +20,6 @@ class UserRepository(
         userDao.updateUser(userid,nama, email, alamat, password)
     }
 
-    suspend fun getUser(userid:Int)= userDao.getUserProfile(userid)
+    fun getUser(userid:Int)= userDao.getUserProfile(userid)
 
 }

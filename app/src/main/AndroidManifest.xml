@@ -62,14 +62,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".JadwalActivity"
+            android:name=".ui.home.JadwalActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DetailPlaceActivity"
+            android:name=".ui.home.DetailPlaceActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
