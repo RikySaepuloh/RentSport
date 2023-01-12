@@ -3,10 +3,8 @@ package id.esaku.rentsport
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.CountDownTimer
-import id.esaku.rentsport.databinding.ActivityJadwalBinding
 import id.esaku.rentsport.databinding.ActivityMetodePembayaranBinding
-import id.esaku.rentsport.ui.TempatSewaViewModel
+import id.esaku.rentsport.ui.home.TempatSewaViewModel
 
 class MetodePembayaranActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMetodePembayaranBinding

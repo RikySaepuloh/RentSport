@@ -12,7 +12,6 @@ import id.esaku.rentsport.LokasiActivity
 import id.esaku.rentsport.R
 import id.esaku.rentsport.data.source.local.entity.TempatSewaEntity
 import id.esaku.rentsport.databinding.FragmentHomeBinding
-import id.esaku.rentsport.ui.TempatSewaViewModel
 
 class HomeFragment : Fragment() {
 

@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.google.android.material.snackbar.Snackbar
 import id.esaku.rentsport.databinding.ActivityDetailPlaceBinding
-import id.esaku.rentsport.ui.TempatSewaViewModel
 
 class DetailPlaceActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailPlaceBinding
